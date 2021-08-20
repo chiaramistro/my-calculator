@@ -104,6 +104,14 @@ function Calculator() {
     setChainOfOperations(resolvedChainOfOp);
   }
 
+  function onPercentageClicked() {
+      const newPercentageNum = numberToShow/100;
+      let updatedChainOfOp = chainOfOperations;
+      updatedChainOfOp = updatedChainOfOp.replace(MATCH_LAST_NUMBER_REGEX, newPercentageNum);
+      setChainOfOperations(updatedChainOfOp);
+      setNumberToShow(newPercentageNum);
+  }
+
   return (
     <div className="Calculator">
       <p className="calc-title u-font-size-default"> Calculator </p>
@@ -184,8 +192,9 @@ function Calculator() {
         />
       </div>
       <div className="calc-row">
-        <CalculatorButton
-          onCalcButtonClicked={() => console.log("No action")}
+      <CalculatorButton
+          number={"%"}
+          onCalcButtonClicked={() => onPercentageClicked()}
         />
         <CalculatorButton
           number={0}
