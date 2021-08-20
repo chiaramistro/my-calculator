@@ -10,7 +10,7 @@ function CalculatorButton(props) {
   return (
     <div className="CalculatorButton">
       <button className="calc-button" onClick={() => onCalcButtonClick(props.number)}>
-        <p className="calc-button-text">{props.number}</p>
+        <p className="calc-button-text u-font-size-default">{props.number}</p>
         </button>
     </div>
   );

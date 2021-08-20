@@ -106,7 +106,7 @@ function Calculator() {
 
   return (
     <div className="Calculator">
-      <p className="calc-title"> Calculator </p>
+      <p className="calc-title u-font-size-default"> Calculator </p>
       <CalculatorField chainOfOperations={numberToShow} />
       <div className="calc-row">
         <CalculatorButton
