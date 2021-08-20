@@ -23,7 +23,7 @@ function Calculator() {
       setNumberToShow('' + num); //reset
       setLastAddedOp(false);
     } else {
-      setNumberToShow(numberToShow + num)
+      setNumberToShow(numberToShow + '' + num)
     }
 
     setChainOfOperations(newChainOfOperations);
