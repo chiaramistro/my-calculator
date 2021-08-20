@@ -13,6 +13,11 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: digitalFont;
+  src: url('./assets/DIGITALDREAM.ttf');
+}
+
 /*
  UTILITIES  
 */

@@ -1,6 +1,6 @@
 import './CalculatorField.css';
 
-const MAX_FIELD_DIGITS = 20;  //Fits 20 numbers
+const MAX_FIELD_DIGITS = 13;  //Fits 20 numbers with normal font, 13 with digital
 
 function CalculatorField(props) {
 
@@ -10,7 +10,7 @@ function CalculatorField(props) {
     if (props.numberToShow.length > MAX_FIELD_DIGITS) {
       smallerFont = {
         //backgroundColor: `#1DA6`, //test
-        fontSize: `calc(2.5rem - ${2+(props.numberToShow.length - MAX_FIELD_DIGITS)}px)`,
+        fontSize: `calc(2.5rem - ${5+(props.numberToShow.length - MAX_FIELD_DIGITS)}px)`,
       };
       return true;
     } else return false;
